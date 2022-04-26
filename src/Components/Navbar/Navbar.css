@@ -29,10 +29,18 @@
   margin-right: 4rem;
   list-style-type: none;
 }
-.n-list > ul > li:hover {
+.n-list > ul > a > li:hover {
   cursor: pointer;
   color: var(--yellow);
 }
 .n-button {
   flex: 10;
+}
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+  .n-button {
+    display: none;
+  }
 }
